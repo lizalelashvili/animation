@@ -1,0 +1,61 @@
+body{
+    background-color: #e6ccff;
+}
+
+img{
+    width: 50%;
+}
+
+.car{
+	position: absolute;
+}
+
+.one{
+	animation-name: car1;
+	animation-duration: 5s;
+    animation-delay: 2ms;
+	animation-timing-function: ease-in;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+    transform: skewX(25deg);
+}
+
+.two{
+	animation-name: car2;
+	animation-duration: 5s;
+    animation-delay: 2ms;
+	animation-timing-function: ease-in;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+    
+}
+
+@keyframes car1{
+    0%{
+        left: 50%;
+    }
+    50%{
+        left: 25%;
+
+    }
+    100%{
+        left: 0;
+    }
+    
+}
+
+
+@keyframes car2{
+    0% {
+        
+        right: 50%;
+    }
+    50%{
+        right: 25%;
+
+    }
+    100%{
+        right: 0;
+    }
+}
+
